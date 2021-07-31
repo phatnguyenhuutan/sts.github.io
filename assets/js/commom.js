@@ -59,8 +59,35 @@ function homeSlider(){
         ]
       });
 }
+function menu(){
+  var $window = $(window);
+  var windowsize = $window.width();
+  if (windowsize < 992) {
+    $('.header .navbar .navbar-nav li.nav-item.dropdown .sub-menu').after('<div class="show"></div>');
+  }
+ 
+}
+function toTop(){
+  var $backToTop = $(".back-to-top");
+  $backToTop.hide();
+
+
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 100) {
+      $backToTop.fadeIn();
+    } else {
+      $backToTop.fadeOut();
+    }
+  });
+
+  $backToTop.on('click', function(e) {
+    $("html, body").animate({scrollTop: 0}, 500);
+  });
+}
 $(document).on("click", '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
 homeSlider();
+menu();
+toTop();
