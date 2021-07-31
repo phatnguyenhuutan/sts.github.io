@@ -8827,6 +8827,10 @@ ul.pagination {
     max-width: 100%; }
   .header__main button {
     padding: 8px 0px; }
+    .header__main button:focus {
+      outline: none;
+      box-shadow: none;
+      border: none; }
   .header__main .navbar .navbar-nav li a {
     padding: 12px 0px; }
     .header__main .navbar .navbar-nav li a:hover {
