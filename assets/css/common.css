@@ -8847,6 +8847,8 @@ ul.pagination {
   .header__main .navbar .navbar-nav li.active.dropdown .sub-menu li.active a {
     background-color: transparent;
     color: #87c80a; }
+  .header__main .navbar .navbar-nav li.dropdown a {
+    width: 90%; }
   .header__main .navbar .navbar-nav li.dropdown::after {
     display: none; }
   .header__main .navbar .navbar-nav li.dropdown .show {
@@ -8864,7 +8866,8 @@ ul.pagination {
     background-position: center center; }
   .header__main .navbar .navbar-nav li.dropdown .sub-menu {
     position: relative;
-    padding-left: 30px; }
+    padding-left: 30px;
+    transition: 10s; }
     .header__main .navbar .navbar-nav li.dropdown .sub-menu li a {
       padding: 12px 0px;
       padding-right: 0px !important; }
