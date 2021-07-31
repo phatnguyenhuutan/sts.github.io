@@ -8109,21 +8109,22 @@ body {
       .header__main .navbar .navbar-nav li.dropdown:hover .sub-menu {
         display: block; }
 
-.slick-arrow.slick-next::before {
-  content: "";
-  background-image: url(../images/icons/flex-next.png);
-  background-size: cover;
-  width: 14px;
-  height: 23px;
-  display: block; }
-
-.slick-arrow.slick-prev::before {
-  content: "";
-  background-image: url(../images/icons/flex-prev.png);
-  background-size: cover;
-  width: 14px;
-  height: 23px;
-  display: block; }
+.slick-arrow {
+  z-index: 99; }
+  .slick-arrow.slick-next::before {
+    content: "";
+    background-image: url(../images/icons/flex-next.png);
+    background-size: cover;
+    width: 14px;
+    height: 23px;
+    display: block; }
+  .slick-arrow.slick-prev::before {
+    content: "";
+    background-image: url(../images/icons/flex-prev.png);
+    background-size: cover;
+    width: 14px;
+    height: 23px;
+    display: block; }
 
 .heading h2,
 .heading h1 {
@@ -8825,7 +8826,7 @@ ul.pagination {
   .container {
     max-width: 100%; }
   .header__main button {
-    padding: 5px 0px; }
+    padding: 8px 0px; }
   .header__main .navbar .navbar-nav li a {
     padding: 12px 0px; }
     .header__main .navbar .navbar-nav li a:hover {
