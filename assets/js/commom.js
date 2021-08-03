@@ -13,7 +13,7 @@ function homeSlider(){
         arrows: true,
         dots: false,
         // fade: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         responsive: [
           {
