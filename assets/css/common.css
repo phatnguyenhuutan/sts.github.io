@@ -8196,6 +8196,11 @@ body {
       .brand__slider .slick-dots li.slick-active button:before {
         color: #077d37;
         background: #077d37; }
+  .brand__slider .slick-arrow {
+    transition: 0.5s;
+    display: none !important; }
+  .brand__slider:hover .slick-arrow {
+    display: inline-block !important; }
 
 .product .col-6 {
   margin-bottom: 30px; }
@@ -8488,12 +8493,21 @@ ul.pagination {
     width: 100%;
     margin-bottom: 0px; }
 
-.content img,
-.content iframe {
-  margin-bottom: 10px; }
-
 .content img {
   max-width: 100%; }
+
+.content img,
+.content iframe {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px; }
+
+.content .gallery .col-lg-4 {
+  margin-bottom: 30px; }
+
+.content .gallery .item img {
+  margin-bottom: 0px;
+  height: 150px; }
 
 #accordion .card .card-header h5 button {
   display: block;
@@ -8882,7 +8896,13 @@ ul.pagination {
   .team .slick-next {
     right: 0; }
   .footer .col-12:not(:last-child) {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .brand__slider .slick-arrow {
+    display: inline-block !important; }
+    .brand__slider .slick-arrow.slick-next {
+      right: 0px; }
+    .brand__slider .slick-arrow.slick-prev {
+      left: 0px; } }
 
 @media only screen and (max-width: 767px) {
   .heading h2,

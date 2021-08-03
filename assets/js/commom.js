@@ -10,8 +10,8 @@ function homeSlider(){
       $('.brand .slider-for').slick({
         slidesToShow: 5,
         slidesToScroll: 3,
-        arrows: false,
-        dots: true,
+        arrows: true,
+        dots: false,
         // fade: true,
         autoplay: false,
         autoplaySpeed: 4000,
@@ -19,8 +19,8 @@ function homeSlider(){
           {
               breakpoint: 769,
               settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3
+                  slidesToShow: 2,
+                  slidesToScroll: 2
               }
           }
   
